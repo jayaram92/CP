@@ -39,6 +39,7 @@ class Bowling:
                             print('invalid')
                             return False
             self.roll = fin
+            print('correct input')
             return True
         except ValueError:
             print('value improper')
