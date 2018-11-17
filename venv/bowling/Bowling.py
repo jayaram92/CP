@@ -1,12 +1,11 @@
 import os
 import sys
-import random
-import math
-import time
 
 class Bowling:
+
     def __init__(self):
         self.roll = []
+
     def input_roll(self,a):
         fin = []
         ar = []
@@ -45,20 +44,6 @@ class Bowling:
             print('value improper')
             return False
 
-
-    def bowling(self,a):
-       self.findsum(a)
-       if a.__len__() != 10:
-           print('length')
-           print(a.__len__())
-       for b in a:
-           for c in b:
-               if self.validate(c):
-                   print(c)
-             #  print(c)
-    def validate(self,val):
-        return val<=10
-
     def findsum(self):
         output=[]
         b=0
@@ -80,8 +65,6 @@ class Bowling:
             #b=0
         print('output')
         print(output)
-        for a in output:
-            print(a)
         print('end')
 
 
